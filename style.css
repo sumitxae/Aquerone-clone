@@ -11,6 +11,9 @@ html,body{
     /* max-width: 100vw; */
     padding: 15px;
     position: relative;
+    z-index: 99;
+    bottom: -100%;
+    /* transform: translateY(100%); */
     background-color: #F9F7F0;
 }
 ::-webkit-scrollbar{
@@ -532,4 +535,38 @@ html,body{
 }
 .upwings img:first-child{
     transform: translateX(-2%);
+}
+
+#loader{
+    z-index: 999;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E9E6DA;
+    /* transform: translateY(-100%); */
+}
+#images{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 7vmax;
+    width: 23vmax;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#footer{
+    padding: 3vmax;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    color: #2E2E27;
+    position: relative;
+    top: 70%;
+    font-family: sohne;
+    font-size: 1.3vmin;
+}
+#footer img{
+    height: 4vmax;
 }

@@ -106,9 +106,38 @@ function pageSix(){
     })
 }
     
+function loader(){
+    gsap.to("#loader",{
+        y:"-100%",
+        ease: "ease.out",
+        delay: 2,
+        duration: 1,
+    })
+    gsap.to("#main",{
+        bottom:"0%",
+        delay:2.1,
+        ease: "ease.out",
+        duration: 1
+    })
+    let loaderImage = [
+        "./loader-images/loader-image (1).png",
+        "./loader-images/loader-image (2).png",
+        "./loader-images/loader-image (3).png",
+    ]
+    let container = document.querySelector("#images");
+    let i = 0;
+    setInterval(() => {
+        i = 0;
+    }, 900);
+    
+    setInterval(() => {
+       container.style.backgroundImage = `url("${loaderImage[i]}")`
+       i++;
+    }, 300);
+}
 
+loader();
 pageOne();
 pageFour();
 pageFive();
 pageSix();
-
