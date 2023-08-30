@@ -1,0 +1,28 @@
+@font-face {
+    font-family: plaid;
+    src: url(./fonts/609a6c4918cf68eb854169b9_Plaid-L.ttf);
+}
+@font-face {
+    font-family: Migra;
+    src: url(./fonts/609a6c4942325b29e583e448_Migra-Light.ttf);
+}
+@font-face {
+    font-family: Sohne;
+    src: url(./fonts/609a6c49927eafcdc7fc3a15_Sohne-Leicht.ttf);
+}
+@font-face {
+    font-family: neweddy;
+    src: url(./fonts/609a6c49f3f19df6c82675c3_NewEddy-Display.ttf);
+}
+@font-face {
+    font-family: Migra light italic;
+    src: url(./fonts/609bef147c0a2c424df6b0d1_MigraItalic-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Migra medium italic;
+    src: url(./fonts/60bfa4c6fbf60d515b47dc3c_MigraItalic-LightItalic.ttf);
+}
+@font-face {
+    font-family: Sohne kraftig;
+    src: url(./fonts/60ec238a0b526b19bc03f9eb_Sohne-Kraftig.ttf);
+}
