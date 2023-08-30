@@ -39,7 +39,7 @@ function pageOne(){
         scrollTrigger:{
             trigger:"#page1",
             scroller:"#main",
-            scrub:0.5,
+            scrub:1,
             // markers:true,
             start:"top -5%",
             end:"top -14%"
@@ -62,20 +62,53 @@ function pageFour(){
         },
       });
 }
+function pageFive(){
+    var imgcon = [
+        "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5c33f88482437f0a621_cbd-focus-energy-cbd-morning-matin-min.jpg",
+        "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5b05d047988026246a4_cbd-for-sleep-sommeil-calm-relaxting-cbd-min.jpg",
+        "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a60c4483b50a2ad2da82_cbd-pain-douleurs-relief-inflammation-min.jpg",
+        "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5dc8b947fb6b0a6d624_cbd-pleasure-libido-mood-boost-plaisir-humeur-min.jpg",
+    ]
+    let i = 0;
+    var smallcon = document.querySelectorAll(".small-imgcon");
+    smallcon.forEach(element => {
+        element.style.backgroundImage = `url(${imgcon[i]})`
+        i++;
+    })
+}
+
+function pageSix(){  
+    gsap.to(".upwings #left-wing",{
+        rotate: "50deg",
+        y: "-31%",
+        x: "-59.8%",
+        scrollTrigger:{
+            trigger:"#wings",
+            scroller:"#main",
+            scrub:2,
+            // markers:true,
+            start:"top 33%",
+            end:"top -70%"
+        }
+    })
+    gsap.to(".upwings #right-wing",{
+        rotate: "-50deg",
+        y: "-32.5%",
+        x: "58%",
+        scrollTrigger:{
+            trigger:"#wings",
+            scroller:"#main",
+            scrub:2,
+            // markers:true,
+            start:"top 33%",
+            end:"top -70%"
+        }
+    })
+}
+    
 
 pageOne();
 pageFour();
+pageFive();
+pageSix();
 
-
-var imgcon = [
-    "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5c33f88482437f0a621_cbd-focus-energy-cbd-morning-matin-min.jpg",
-    "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5b05d047988026246a4_cbd-for-sleep-sommeil-calm-relaxting-cbd-min.jpg",
-    "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a60c4483b50a2ad2da82_cbd-pain-douleurs-relief-inflammation-min.jpg",
-    "https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/6399a5dc8b947fb6b0a6d624_cbd-pleasure-libido-mood-boost-plaisir-humeur-min.jpg",
-]
-let i = 0;
-var smallcon = document.querySelectorAll(".small-imgcon");
-smallcon.forEach(element => {
-    element.style.backgroundImage = `url(${imgcon[i]})`
-    i++;
-});

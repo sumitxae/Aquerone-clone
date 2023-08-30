@@ -458,3 +458,78 @@ html,body{
     margin-top: 2vmax;
     align-self: flex-end;
 }
+#wings{
+    height: 170vh;
+    position: relative;
+    z-index: 99;
+    margin-top: -45px;
+    width: 98.5vw;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #E9E6DA;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: 30% 50%;
+    background-size: 90%;
+    background-repeat: repeat-y;
+    background-image: url("https://uploads-ssl.webflow.com/60995478590a43cbebbd2ae9/60af6e673ae59127040e9a35_sunburst.svg");
+}
+#circle{
+    height: 80vmin;
+    position: relative;
+    width: 43vmax;
+    color: #E9E6DA;
+    text-align: center;
+    background-color: #2E2E27;
+    border-radius: 50%;
+    display: flex;
+    line-height: 4vmax;
+    align-items: center;
+    justify-content: center;
+}
+#text p{
+    font-family: plaid;
+    font-size: 0.7vmax;
+    text-transform: uppercase;
+    /* margin: 110px 0; */
+}
+#info{
+    font-size: 2vw;
+    /* Shree ram ko dekh kar shree janak nandini,bagh me khadi ki khadi reh gayi */
+    font-family: migra medium italic;
+    font-weight: 100;
+    line-height: 2.5vmax;
+    margin: 2vmax 0;
+}
+#text h1{
+    font-size: 3.5vw;
+    font-weight: 100;
+    font-family: neweddy;
+}
+#overlay{
+    height: 50%;
+    width: 180%;
+    top: 8%;
+    position: absolute;
+    /* background-color: rgba(255, 160, 122, 0.421); */
+}
+#lower img:first-child{
+    margin-right: 40%;
+}
+#lower:first-child{
+    z-index: 99;
+    width: 95%;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* white-space: nowrap; */
+    position: absolute;
+    /* background-color: wheat; */
+    /* background-color: white; */
+}
+.upwings img:first-child{
+    transform: translateX(-2%);
+}
